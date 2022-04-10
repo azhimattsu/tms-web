@@ -1,6 +1,7 @@
 import { memo, VFC } from "react";
 import styled from "styled-components";
 import { Input } from "../atoms/input/Input";
+import { Button } from "../atoms/button/Button";
 
 const SContainer = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ export const InputWithLabel: VFC = memo((props) => {
       <SContainer>
         <SDiv>積込地住所１</SDiv>
         <Input />
+        <Button />
       </SContainer>
     </>
   );
