@@ -2,10 +2,7 @@ import { memo, VFC } from "react";
 import styled from "styled-components";
 import { Input } from "../atoms/input/Input";
 import { Button } from "../atoms/button/Button";
-
-const SContainer = styled.div`
-  display: flex;
-`;
+import { Flex } from "../atoms/layout/Flex";
 
 const SDiv = styled.div`
   width: 200px;
@@ -21,11 +18,11 @@ const SDiv = styled.div`
 export const InputWithLabel: VFC = memo((props) => {
   return (
     <>
-      <SContainer>
+      <Flex>
         <SDiv>積込地住所１</SDiv>
         <Input />
         <Button />
-      </SContainer>
+      </Flex>
     </>
   );
 });

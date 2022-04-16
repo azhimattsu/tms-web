@@ -2,7 +2,8 @@ import { memo, VFC } from "react";
 import { Input } from "./components/atoms/input/Input";
 import { InputWithLabel } from "./components/molecules/InputWithLabel";
 import { Button } from "./components/atoms/button/Button";
-
+import { Box } from "./components/atoms/layout/Box";
+import { Flex } from "./components/atoms/layout/Flex";
 export const ComponentSample: VFC = memo(() => {
   return (
     <>
@@ -18,6 +19,21 @@ export const ComponentSample: VFC = memo(() => {
       <div>
         <Button />
       </div>
+      <Flex>
+        <Box>
+          <Flex>
+            test
+            <Button />
+          </Flex>
+          <hr />
+          <Button />
+        </Box>
+        <Box>
+          test
+          <hr />
+          <Button />
+        </Box>
+      </Flex>
     </>
   );
 });
